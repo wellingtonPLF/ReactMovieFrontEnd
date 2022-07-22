@@ -1,3 +1,4 @@
+import { Star, StarHalf } from 'phosphor-react';
 import React from 'react';
 import './style.css'
 
@@ -5,16 +6,11 @@ import './style.css'
 const index = () => {
     return (
         <div className="dsmovie-stars-container">
-            {/*<StarFull />
-            <StarFull />
-            <StarFull />
-            <StarHalf />
-            <StarEmpty />*/}
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
+            <Star size={32} color={'#FFBB3A'} weight={'fill'}/>
+            <Star size={32} color={'#FFBB3A'} weight={'fill'}/>
+            <Star size={32} color={'#FFBB3A'} weight={'fill'}/>
+            <StarHalf size={32} weight="fill" color={'#FFBB3A'} />
+            <Star size={32} color={'#FFBB3A'} />
         </div>
     );
 };

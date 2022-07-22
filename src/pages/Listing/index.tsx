@@ -7,7 +7,7 @@ import { MoviePage } from 'shared/types/MoviePage';
 
 const Index = () => {
     const [movies, setMovies] = useState<Array<Movie>>()
-    const [pageNumber, setPageNumber] = useState(1)
+    const [pageNumber, setPageNumber] = useState(0)
     const [page, setPage] = useState<MoviePage>({
         content: [],
         last: true,
@@ -27,7 +27,6 @@ const Index = () => {
     useEffect(() => {
         movieService.getByPageNumber(pageNumber).then(
             it => {
-                console.log(it.content)
                 setMovies(it.content)
                 setPage(it)
             }

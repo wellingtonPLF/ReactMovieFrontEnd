@@ -14,11 +14,11 @@ const index = ({setPN, page, pageNumber}: Props) => {
     return (
         <div className="dsmovie-pagination-container">
             <div className="dsmovie-pagination-box">
-                <button onClick={() => setPN(pageNumber-1)} className="dsmovie-pagination-button" disabled={pageNumber <= 1} >
+                <button onClick={() => setPN(pageNumber-1)} className="dsmovie-pagination-button" disabled={page.first} >
                     <FontAwesomeIcon icon={faAngleLeft} fontSize={22} />
                 </button>
-                <p>{`${pageNumber} de ${page.totalPages}`}</p>
-                <button onClick={() => setPN(pageNumber+1)} className="dsmovie-pagination-button" disabled={pageNumber >= 3} >
+                <p>{`${pageNumber + 1} de ${page.totalPages}`}</p>
+                <button onClick={() => setPN(pageNumber+1)} className="dsmovie-pagination-button" disabled={page.last} >
                     <FontAwesomeIcon icon={faAngleRight} fontSize={22} />
                 </button>
             </div>

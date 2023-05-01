@@ -41,7 +41,7 @@ Você pode visualizar o layout do projeto através da pasta _Apresentation do pr
 
 ## 🚀 Como executar
 
-- Clone o repositório
+- Clone o repositório e seu backend: [ProjetoMovieBackEnd](https://github.com/wellingtonPLF/ProjetoMovieBackEnd)
 - Instale as dependências com `npm install`
 - Inicie o servidor com `npm start`
 
